@@ -230,6 +230,8 @@ Once an alum agrees to chat, give the agent their LinkedIn profile (PDF or paste
 - **5–7 question groups**: each grounded in something specific on their profile, with a follow-up and a private "why ask" line. The Top 4 are starred; sponsorship and referral questions sit under "If time allows" and are phrased softly.
 - **Don't-ask list**, **closing script**, space for notes under each question, and an after-chat checklist (insights, people they suggested, thank-you note within 24 hours).
 
+The doc is a first draft for you to edit. Change it by hand or tell the agent what to adjust; it revises the same doc and keeps the parts you've already approved.
+
 Chinese-speaking alumni can get the whole doc in Chinese. This skill covers **first** chats only; for follow-ups you'll know the person well enough to prepare on your own.
 
 ---
