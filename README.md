@@ -148,7 +148,7 @@ Example prompts for later steps:
 - If too few people fit, it tells you which condition is the bottleneck and offers specific ways to relax it. It never loosens your criteria on its own.
 - Contact marks already in the file (`Sent Email`, `Coffee Chat`, colors) are ignored when picking. They may belong to someone else; you keep track of your own outreach.
 
-**Shortlist sheet.** A new sheet named like `Shortlist Fiona 1110` is added to your workbook. For a CSV, a new `-shortlist` CSV is created next to it. Your original sheet is never modified.
+**Shortlist sheet.** A new sheet named like `Shortlist Alex 1110` is added to your workbook. For a CSV, a new `-shortlist` CSV is created next to it. Your original sheet is never modified.
 
 | Column | Meaning |
 | --- | --- |
