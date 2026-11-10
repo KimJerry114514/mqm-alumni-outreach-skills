@@ -1,0 +1,18 @@
+{
+  "name": "mqm-coffee-chat",
+  "owner": {
+    "name": "Ruize Jin",
+    "url": "https://github.com/KimJerry114514"
+  },
+  "metadata": {
+    "description": "Coffee chat skills for Duke Fuqua MQM students."
+  },
+  "plugins": [
+    {
+      "name": "mqm-coffee-chat",
+      "source": "./",
+      "description": "Shortlist alumni, find emails, draft and send outreach, prepare for the first coffee chat, and write the thank-you note.",
+      "version": "1.0.0"
+    }
+  ]
+}

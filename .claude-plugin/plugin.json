@@ -1,0 +1,13 @@
+{
+  "name": "mqm-coffee-chat",
+  "version": "1.0.0",
+  "description": "Six skills that walk Duke Fuqua MQM students through alumni coffee chats: shortlist alumni, find emails, draft and send outreach, prepare for the first chat, and write the thank-you note.",
+  "author": {
+    "name": "Ruize Jin",
+    "url": "https://github.com/KimJerry114514"
+  },
+  "homepage": "https://github.com/KimJerry114514/mqm-alumni-outreach-skills",
+  "repository": "https://github.com/KimJerry114514/mqm-alumni-outreach-skills",
+  "license": "MIT",
+  "keywords": ["networking", "coffee-chat", "alumni", "outreach", "duke-fuqua", "mqm"]
+}

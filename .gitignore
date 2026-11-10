@@ -11,3 +11,5 @@ runs/
 !skills/**/*.json
 .DS_Store
 ~$*
+!.claude-plugin/plugin.json
+!.claude-plugin/marketplace.json
