@@ -1,0 +1,4 @@
+interface:
+  display_name: "准备第一次 Coffee Chat"
+  short_description: "根据对方主页和我的简历，生成开场、40 秒自我介绍、按优先级排好的问题、不建议问的问题和收尾，存成 Word 准备稿"
+  default_prompt: "使用 $prepare-coffee-chat，我把对方的 LinkedIn 主页 PDF 和我最想聊的 2–3 个点给你，帮我准备第一次 coffee chat 的 Word 文档。"

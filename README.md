@@ -1,6 +1,6 @@
 # MQM Alumni Outreach Skills
 
-Agent skills that help Duke Fuqua **MQM** students reach out to alumni for coffee chats: pick the right people, find their emails, write a personal email and LinkedIn message in a voice that has worked well with MQM alumni, and send from your own Duke Outlook.
+Agent skills that help Duke Fuqua **MQM** students reach out to alumni for coffee chats: pick the right people, find their emails, write a personal email and LinkedIn message in a voice that has worked well with MQM alumni, send from your own Duke Outlook, and prepare for the first chat once someone says yes.
 
 They work with any coding agent that loads `SKILL.md` skills, such as **Claude Code** or **Codex**.
 
@@ -41,21 +41,22 @@ The writing style comes from a real set of cold emails and LinkedIn messages tha
 
 ---
 
-## The four skills
+## The five skills
 
 | Skill | What it does | You provide | Output |
 | --- | --- | --- | --- |
 | [`match-alumni`](skills/match-alumni/SKILL.md) | Uses your own filter as-is, or picks alumni who fit your background and preferences (region, industry, company, role, class year) | Whether you already filtered; if not, your resume, optional LinkedIn export, preferences | A new **shortlist sheet** with a fit level and a one-line reason per person |
 | [`collect-alumni-emails`](skills/collect-alumni-emails/SKILL.md) | Finds and verifies missing emails from LinkedIn contact info and the Fuqua alumni directory in your logged-in browser; labels school and alumni addresses | The sheet to fill | Email column filled or labeled |
 | [`draft-alumni-outreach`](skills/draft-alumni-outreach/SKILL.md) | Writes one email and one LinkedIn message per person, using only facts from your resume and the sheet | Your resume, optional LinkedIn export, optional goal | `Email Content` and `LinkedIn Message` columns |
+| [`prepare-coffee-chat`](skills/prepare-coffee-chat/SKILL.md) | Builds a prep doc for a **first** coffee chat: why this person, company brief, conversation arc, small-talk hook, 40-second elevator pitch, 5–7 prioritized questions grounded in their profile, a don't-ask list, closing and note space | Their LinkedIn PDF or pasted profile, the 2–3 things you most want to learn, optional articles or website | `Coffee Chat with <Name>.docx` |
 | [`send-alumni-outreach`](skills/send-alumni-outreach/SKILL.md) | Sends approved emails from your Duke Outlook and records each confirmed send. LinkedIn messages are always sent by you, by hand | Your Outlook address, whether to include your saved signature, a test address | `Sent Email` = 1 for confirmed sends |
 
 Typical order:
 
 ```
-match-alumni ──► collect-alumni-emails ──► draft-alumni-outreach ──► send-alumni-outreach
- (who to contact)   (only if many people        (email + LinkedIn         (test to yourself,
-                     on the list lack emails)    message per person)        then real sends)
+match-alumni ──► collect-alumni-emails ──► draft-alumni-outreach ──► send-alumni-outreach ──► prepare-coffee-chat
+ (who to contact)   (only if many people        (email + LinkedIn         (test to yourself,         (after someone says yes:
+                     on the list lack emails)    message per person)        then real sends)          prep doc for the first chat)
 ```
 
 Each skill can also be used on its own.
@@ -217,6 +218,20 @@ LinkedIn messages are shorter, about 70–115 words: the same idea in a friendli
 - Each confirmed send sets `Sent Email` = 1. Rows already marked 1 are skipped, so a rerun never double-sends.
 - **LinkedIn messages are never sent automatically.** Copy them yourself, then tell the agent who you messaged so it can fill `Sent LinkedIn`.
 
+### 5. Preparing for the first chat (`prepare-coffee-chat`)
+
+Once an alum agrees to chat, give the agent their LinkedIn profile (PDF or pasted text), the two or three things you most want to learn from them, and any article, blog or website of theirs. It writes a Word prep doc in the format that worked for us:
+
+- **Why this person**: their unique value compared with other alumni, narrowed to two core questions. This part is for you only.
+- **Company and team brief**: so you don't spend the chat asking what can be found online.
+- **Conversation arc**: for example *Their Journey → Current Work → How AI Is Changing the Role → What That Means for You → Who Else to Meet*.
+- **Warm-up**: a small-talk hook from their profile, such as a hobby, a shared school or a recent event.
+- **40-second elevator pitch**: built from your resume and pointed at why you wanted to talk to *them*.
+- **5–7 question groups**: each grounded in something specific on their profile, with a follow-up and a private "why ask" line. The Top 4 are starred; sponsorship and referral questions sit under "If time allows" and are phrased softly.
+- **Don't-ask list**, **closing script**, space for notes under each question, and an after-chat checklist (insights, people they suggested, thank-you note within 24 hours).
+
+Chinese-speaking alumni can get the whole doc in Chinese. This skill covers **first** chats only; for follow-ups you'll know the person well enough to prepare on your own.
+
 ---
 
 ## Your data and privacy
@@ -271,7 +286,7 @@ Yes. Edit `Email Content` directly in the sheet, or tell the agent what to chang
 
 **使用步骤：**
 
-1. 把 `skills/` 下的四个文件夹复制到 `~/.claude/skills/`（Claude Code）或 `~/.codex/skills/`（Codex），重启 agent。
+1. 把 `skills/` 下的五个文件夹复制到 `~/.claude/skills/`（Claude Code）或 `~/.codex/skills/`（Codex），重启 agent。
 2. 对 agent 说「我想联系 MQM 校友约 coffee chat，先用 match-alumni」。
 3. 按提示一步步回答：
    - 表格路径和 sheet；
@@ -284,6 +299,9 @@ Yes. Edit `Email Content` directly in the sheet, or tell the agent what to chang
    - 要带 Outlook 里保存的签名：在 Outlook 网页里逐封发，较慢。
    - 不带签名：用邮件连接器直接发，较快。
    - LinkedIn 私信一律自己手动发。
+7. 对方答应 coffee chat 后，用 `prepare-coffee-chat` 准备第一次聊天：
+   - 给它对方的 LinkedIn 主页 PDF 和你最想聊的 2–3 个点；
+   - 它会生成一份 Word 准备稿，包括开场寒暄、40 秒自我介绍、标出 Top 4 的问题、不建议问的问题和收尾。
 
 注意事项：
 - **不要把 CMC 的 Excel、简历或发送记录上传到 GitHub。**
