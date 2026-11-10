@@ -79,24 +79,62 @@ Every skill also works on its own. For example, you can use `prepare-coffee-chat
 
 ## Install
 
+Pick the agent you use. All six skills are installed together.
+
+### Claude Code (recommended): one command
+
+Inside Claude Code, type:
+
+```
+/plugin install mqm-coffee-chat --marketplace KimJerry114514/mqm-alumni-outreach-skills
+```
+
+On older Claude Code versions, use two commands instead:
+
+```
+/plugin marketplace add KimJerry114514/mqm-alumni-outreach-skills
+/plugin install mqm-coffee-chat@mqm-coffee-chat
+```
+
+To get updates later: `/plugin marketplace update mqm-coffee-chat`.
+
+### Codex, or Claude Code without plugins: one line in Terminal
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/KimJerry114514/mqm-alumni-outreach-skills/main/install.sh | bash
+```
+
+It downloads the latest skills and copies them into `~/.claude/skills/` and/or `~/.codex/skills/`, whichever exists. Run the same line again to update.
+
+To pick a target, add an option. Codex only:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/KimJerry114514/mqm-alumni-outreach-skills/main/install.sh | bash -s -- --codex
+```
+
+Any other agent's skills folder:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/KimJerry114514/mqm-alumni-outreach-skills/main/install.sh | bash -s -- --dir /path/to/skills
+```
+
+### ChatGPT: upload a zip
+
+1. Download the skill zips from the [latest release](https://github.com/KimJerry114514/mqm-alumni-outreach-skills/releases/latest). There is one zip per skill, plus `all-skills.zip`.
+2. In ChatGPT, open **Plugins → Skills → Add**, and upload one skill zip at a time.
+
+The prep and thank-you skills work well this way. The skills that read Excel files or drive your browser work best in Claude Code or Codex.
+
+### Manual install
+
 ```bash
 git clone https://github.com/KimJerry114514/mqm-alumni-outreach-skills.git
-cd mqm-alumni-outreach-skills
+cp -R mqm-alumni-outreach-skills/skills/* ~/.claude/skills/
 ```
 
-Claude Code:
+For Codex, use `~/.codex/skills/` instead.
 
-```bash
-mkdir -p ~/.claude/skills && cp -R skills/* ~/.claude/skills/
-```
-
-Codex:
-
-```bash
-mkdir -p ~/.codex/skills && cp -R skills/* ~/.codex/skills/
-```
-
-Restart the agent so it picks up the new skills. You can call a skill by name ("use prepare-coffee-chat") or just describe what you want; the agent picks the right one.
+After installing, **restart your agent**. You can call a skill by name ("use prepare-coffee-chat") or just describe what you want; the agent picks the right one.
 
 ### What you'll need
 
@@ -310,7 +348,10 @@ CMC 整理的校友 Excel 里已有学长学姐的 **LinkedIn 链接**和基本�
 
 请不要把表格链接或文件转发到 MQM 以外的地方。
 
-**安装**：把 `skills/` 下的 6 个文件夹复制到 `~/.claude/skills/`（Claude Code）或 `~/.codex/skills/`（Codex），重启 agent。
+**安装**（装好后重启 agent）：
+- **Claude Code**：在 Claude Code 里输入 `/plugin install mqm-coffee-chat --marketplace KimJerry114514/mqm-alumni-outreach-skills`
+- **Codex 或其他 agent**：在终端粘贴 `curl -fsSL https://raw.githubusercontent.com/KimJerry114514/mqm-alumni-outreach-skills/main/install.sh | bash`
+- **ChatGPT**：从 [Releases](https://github.com/KimJerry114514/mqm-alumni-outreach-skills/releases/latest) 下载单个 skill 的 zip，在 Plugins → Skills → Add 上传
 
 **怎么用：**
 
