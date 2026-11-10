@@ -12,7 +12,7 @@
       "name": "mqm-coffee-chat",
       "source": "./",
       "description": "Shortlist alumni, find emails, draft and send outreach, prepare for the first coffee chat, and write the thank-you note.",
-      "version": "1.0.0"
+      "version": "1.1.0"
     }
   ]
 }
