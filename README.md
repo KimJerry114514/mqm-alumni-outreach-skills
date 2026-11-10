@@ -12,6 +12,18 @@ They work with any coding agent that loads `SKILL.md` skills, such as **Claude C
 
 The Career Management Center (CMC) shares an Excel directory of MQM alumni in the US. It already has each alum's **LinkedIn link** and basic information (name, nickname, current employer and title, location, MQM track, class year), but **no email addresses**. Emails can be looked up through **Canvas** (the Fuqua alumni directory).
 
+### Getting the alumni directory
+
+The directory is only available to MQM students, through Canvas (Duke login required):
+
+1. Open the Canvas course [**MQM 2027 Careers**](https://fuqua.instructure.com/courses/4011). Other classes should use their own MQM Careers course.
+2. Go to [**Pages**](https://fuqua.instructure.com/courses/4011/pages).
+3. Open **Target: Research Resources - Networking With MQM Alumni**.
+4. Click **"Click here for the MQM Alumni US LinkedIn directory"**.
+5. Download it (**File → Download → Microsoft Excel (.xlsx)**) and save it somewhere on your computer. Give the agent that local path.
+
+Please don't repost the directory link or file outside MQM channels, and never commit it to GitHub.
+
 Doing this by hand for every alum, then writing a thoughtful message to each, takes hours. These skills automate the tedious parts and leave the decisions to you: you confirm who to contact, review every draft, and approve every send.
 
 The writing style comes from a real set of cold emails and LinkedIn messages that got a high reply rate from MQM alumni. It is anonymized: every fact about the sender comes from **your** resume, never from the original author.
@@ -42,7 +54,7 @@ Each skill can also be used on its own.
 ## Requirements
 
 - An agent that supports skills: Claude Code or Codex.
-- Your own copy of the CMC alumni Excel (`.xlsx`) or a CSV export of it.
+- Your own downloaded copy of the CMC alumni Excel (`.xlsx`) or a CSV export of it. See [Getting the alumni directory](#getting-the-alumni-directory).
 - Your resume (PDF, DOCX or text). Optional but recommended: your LinkedIn profile exported as PDF (your profile → **More → Save to PDF**).
 - For `collect-alumni-emails`: a browser where you are already logged in to LinkedIn and Canvas / the Fuqua alumni directory.
 - For `send-alumni-outreach`: your Duke Outlook account. To send **with** your saved Outlook signature, Outlook on the web logged in in your browser. To send **without** a signature, a mail connector (MCP) for your Outlook account in your agent.
@@ -236,6 +248,17 @@ Yes. Edit `Email Content` directly in the sheet, or tell the agent what to chang
 ## 中文快速上手
 
 这套 skill 给 Duke Fuqua **MQM** 同学做校友 coffee chat 邀约用。CMC 整理的校友 Excel 里已有学长学姐的 **LinkedIn 链接**和基本信息（姓名、公司、职位、地点、track、毕业年份），但**没有邮箱**；邮箱可以通过 **Canvas**（Fuqua 校友目录）查到。
+
+**获取校友表**（需 Duke 账号登录 Canvas）：
+1. 打开 Canvas 课程 [MQM 2027 Careers](https://fuqua.instructure.com/courses/4011)（其他届用各自的 MQM Careers 课程）。
+2. 进入 [Pages](https://fuqua.instructure.com/courses/4011/pages)。
+3. 打开 **Target: Research Resources - Networking With MQM Alumni**。
+4. 点击 **Click here for the MQM Alumni US LinkedIn directory**。
+5. 选 File → Download → Microsoft Excel (.xlsx)，保存到本地，把路径告诉 agent。
+
+请不要把表格链接或文件转发到 MQM 以外的地方。
+
+**使用步骤：**
 
 1. 把 `skills/` 下的四个文件夹复制到 `~/.claude/skills/`（Claude Code）或 `~/.codex/skills/`（Codex），重启 agent。
 2. 对 agent 说「我想联系 MQM 校友约 coffee chat，先用 match-alumni」。
