@@ -200,10 +200,12 @@ The agent asks, one step at a time:
 
 > [!IMPORTANT]
 > **Log in first.** Before running this skill, open the browser your agent controls (for example Chrome with the Claude extension, or your Codex browser) and log in to both:
-> - **LinkedIn** (linkedin.com)
-> - **Fuqua alumni directory**: [go.fuqua.duke.edu/fw/directory](https://go.fuqua.duke.edu/fw/directory/search), with your Duke login. You can also get there from Canvas.
+> - **LinkedIn** (linkedin.com).
+> - **FuquaWorld**, with your Duke login. Go to **People → Directory Search** ([go.fuqua.duke.edu/fw/directory/search](https://go.fuqua.duke.edu/fw/directory/search)), the page shown below. Alumni are found with the **Alumni** filter, or through the **Alumni Directory** link.
 >
 > Keep both tabs open. The agent checks that you're logged in before it starts, and pauses if a login page appears. It never types your password for you.
+
+![FuquaWorld People → Directory Search page, with the search box, the Students and Alumni filters on the left, and the Alumni Directory link](docs/images/fuqua-directory-search.png)
 
 - Checks LinkedIn contact info and the Fuqua alumni directory in your logged-in browser.
 - Writes an email only when name, class year and employer all match.
@@ -390,7 +392,7 @@ CMC 整理的校友 Excel 里已有学长学姐的 **LinkedIn 链接**和基本�
 | 阶段 | Skill | 对 agent 说 | 得到 |
 | --- | --- | --- | --- |
 | 找人 | `match-alumni` | 「我想联系 MQM 校友约 coffee chat，先用 match-alumni」 | 依次回答：表格路径和 sheet → 是否已经筛好 → 简历和 LinkedIn PDF → 偏好（地区、行业、岗位、年份、人数）。得到一张新的名单 sheet，每人附匹配理由；在 `Keep?` 列填 N 剔除 |
-| 找人 | `collect-alumni-emails` | 「帮名单上没邮箱的人找邮箱」 | **开始前先在 agent 用的浏览器里登录 LinkedIn 和 Fuqua 校友目录（go.fuqua.duke.edu，Duke 账号），两个页面保持打开**；agent 会先确认登录状态再开始。只查名单上的人，分小批进行 |
+| 找人 | `collect-alumni-emails` | 「帮名单上没邮箱的人找邮箱」 | **开始前先在 agent 用的浏览器里登录 LinkedIn 和 FuquaWorld（Duke 账号），打开 People → Directory Search 页面（见英文部分截图），两个页面保持打开**；agent 会先确认登录状态再开始。只查名单上的人，分小批进行 |
 | 邀约 | `draft-alumni-outreach` | 「给名单写邮件和 LinkedIn 私信」 | 每人一封邮件和一条私信，只用你简历里的事实 |
 | 邀约 | `send-alumni-outreach` | 「先发一封测试到我的邮箱」，确认后「全部发送」 | 先问要不要带 Outlook 签名：带签名就在 Outlook 网页逐封发（较慢）；不带就用连接器直接发（较快）。LinkedIn 私信自己手动发 |
 | 准备 | `prepare-coffee-chat` | 「帮我准备和某某的 coffee chat」，附对方 LinkedIn PDF 和你最想聊的 2–3 点 | Word 准备稿：为什么找这个人、公司背景、聊天主线、开场寒暄、40 秒自我介绍、标出 Top 4 的问题、不建议问的问题、收尾和会后清单。这是底稿，你改完它会在同一份上继续调整 |
