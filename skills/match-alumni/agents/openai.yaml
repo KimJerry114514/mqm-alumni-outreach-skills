@@ -1,0 +1,4 @@
+interface:
+  display_name: "校友筛选与匹配"
+  short_description: "先问表格和 sheet，再问是否已筛好；需要代筛时按我的简历、LinkedIn 和偏好挑人，新建名单 sheet"
+  default_prompt: "使用 $match-alumni，先问我表格路径和 sheet，再问我是否已经筛好；如果要你帮我挑，就收我的简历、LinkedIn 和地区/行业偏好，挑出合适的校友并新建一个名单 sheet 给我确认。"

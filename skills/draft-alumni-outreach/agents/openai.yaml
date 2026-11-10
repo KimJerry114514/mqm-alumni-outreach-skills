@@ -1,0 +1,4 @@
+interface:
+  display_name: "校友邀约文案"
+  short_description: "用当前用户的简历和 LinkedIn 生成个性化邀约，保留共用英文口吻，写入 xlsx/csv 对应文案列"
+  default_prompt: "使用 $draft-alumni-outreach，先问我表格路径和 sheet、我的简历和 LinkedIn 导出，再为我生成邮件与 LinkedIn 私信，使用我的真实经历并保留共用英文口吻，先写稿不发送。"

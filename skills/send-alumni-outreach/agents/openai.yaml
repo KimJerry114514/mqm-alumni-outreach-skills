@@ -1,0 +1,4 @@
+interface:
+  display_name: "校友邀约发送与记录"
+  short_description: "用当前作者的邮箱和签名发送已批准邮件，确认后回填状态，LinkedIn 手动发送"
+  default_prompt: "使用 $send-alumni-outreach，核对我指定的表格、sheet、本人发件账号和签名，先发到我自己的测试邮箱；按已批准原稿发送普通邮箱邮件并记录，LinkedIn 由我手动发送。"

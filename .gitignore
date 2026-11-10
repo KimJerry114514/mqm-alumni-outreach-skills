@@ -1,0 +1,13 @@
+# Personal data never belongs in this repo
+*.xlsx
+*.xls
+*.csv
+*.pdf
+*.docx
+profiles/
+runs/
+.alumni-outreach/
+*.json
+!skills/**/*.json
+.DS_Store
+~$*

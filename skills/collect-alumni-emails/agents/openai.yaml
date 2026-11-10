@@ -1,0 +1,4 @@
+interface:
+  display_name: "校友邮箱收集与核对"
+  short_description: "先选 Excel 和 sheet，从已登录来源核对邮箱，学校和校友邮箱只做类型标记"
+  default_prompt: "使用 $collect-alumni-emails，先读取我提供的 Excel 路径并让我选择 sheet；仅处理当前筛选可见人员，通过 LinkedIn 和已确认的校友目录核对邮箱。"
