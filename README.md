@@ -46,10 +46,23 @@ The directory is only available to MQM students, through Canvas (Duke login requ
 1. Open the Canvas course [**MQM 2027 Careers**](https://fuqua.instructure.com/courses/4011). Other classes should use their own MQM Careers course.
 2. Go to [**Pages**](https://fuqua.instructure.com/courses/4011/pages).
 3. Open **Target: Research Resources - Networking With MQM Alumni**.
-4. Click **"Click here for the MQM Alumni US LinkedIn directory"**.
+4. Click **"Click here for the MQM Alumni US LinkedIn directory"**. This is the section you're looking for:
+
+   ![The "Networking With MQM Alumni" section on the Canvas Pages page, with links to the MQM Alumni US LinkedIn directory and the MQM Alumni Asia directory](docs/images/canvas-networking-with-mqm-alumni.png)
+
 5. Download it (**File → Download → Microsoft Excel (.xlsx)**) and save it on your computer. Give the agent that local path.
 
+The same section also links an **MQM Alumni Asia directory**, which includes alumni who offered ways to be contacted. The skills work with it too, as long as you download it as `.xlsx` or `.csv`.
+
 Please don't repost the directory link or file outside MQM channels, and never commit it to GitHub.
+
+> [!IMPORTANT]
+> **Proceed with respect.** CMC notes that some alumni have reported students ghosting scheduled calls or reaching out unprofessionally. Every message you send also reflects on the MQM community, so:
+> - Keep your list focused. Contact people you genuinely want to learn from, not everyone at once.
+> - Reply to alumni promptly, and confirm time zones when scheduling.
+> - Show up on time. If you have to cancel, tell them as early as you can and apologize.
+> - Prepare before the chat (`prepare-coffee-chat`), keep to the time you asked for, and send a thank-you note within 24 hours (`write-thank-you-note`).
+> - Review every draft before it goes out. The skills never send anything without your approval.
 
 ---
 
@@ -343,10 +356,20 @@ CMC 整理的校友 Excel 里已有学长学姐的 **LinkedIn 链接**和基本�
 1. 打开 Canvas 课程 [MQM 2027 Careers](https://fuqua.instructure.com/courses/4011)（其他届用各自的 MQM Careers 课程）。
 2. 进入 [Pages](https://fuqua.instructure.com/courses/4011/pages)。
 3. 打开 **Target: Research Resources - Networking With MQM Alumni**。
-4. 点击 **Click here for the MQM Alumni US LinkedIn directory**。
+4. 点击 **Click here for the MQM Alumni US LinkedIn directory**（位置见上方英文部分的截图）。
 5. 选 File → Download → Microsoft Excel (.xlsx)，保存到本地，把路径告诉 agent。
 
+同一段里还有一份 **MQM Alumni Asia directory**（亚洲校友表，含愿意被联系的校友及联系方式），下载成 `.xlsx` 或 `.csv` 后同样可以用。
+
 请不要把表格链接或文件转发到 MQM 以外的地方。
+
+> [!IMPORTANT]
+> **请保持礼貌和专业。** CMC 提醒：有校友反映，学生约了通话却不出现，或者联系方式不专业。你发出的每一条消息也代表 MQM 的整体形象：
+> - 只联系真正想请教的人，不要一次群发给所有人；
+> - 及时回复校友，约时间时确认好时区；
+> - 准时出席；需要取消时尽早告知并道歉；
+> - 聊之前认真准备（`prepare-coffee-chat`），控制在约定时长内，24 小时内发感谢信（`write-thank-you-note`）；
+> - 发送前逐封检查草稿，这些 skill 不会在你确认前发送任何内容。
 
 **安装**（装好后重启 agent）：
 - **Claude Code**：在 Claude Code 里输入 `/plugin install mqm-coffee-chat --marketplace KimJerry114514/mqm-alumni-outreach-skills`
