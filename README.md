@@ -6,6 +6,17 @@ They work with any coding agent that loads `SKILL.md` skills, such as **Claude C
 
 > 中文快速上手见 [下方](#中文快速上手)。
 
+> [!WARNING]
+> **LinkedIn can restrict your account if it sees high-frequency profile visits.**
+> When an agent opens many LinkedIn profiles in a short time, LinkedIn may flag it as automated access and temporarily restrict your account. Repeated restrictions can last longer. This has already happened while building these skills. To avoid it:
+> - Only look up people on your **shortlist**, never the whole directory.
+> - Work in **small batches** with breaks in between. Don't run several agent sessions on LinkedIn at the same time.
+> - If LinkedIn shows a CAPTCHA, a warning or a restriction page, **stop right away** and wait. Don't retry or try to get around it.
+> - For your own profile, use **More → Save to PDF** instead of having the agent browse it.
+> - No visit rate is guaranteed safe. You use LinkedIn under your own account and its terms.
+>
+> **LinkedIn 高频访问可能导致账号被限制（封号）。** agent 短时间内打开大量主页，会被 LinkedIn 判定为自动化访问，账号会被临时限制，多次触发可能限制更久；开发这套 skill 时就遇到过。请只查名单上的人、分小批进行；看到验证码、警告或限制页面就立刻停下，不要重试或想办法绕过。
+
 ---
 
 ## Why this exists
@@ -277,7 +288,11 @@ Yes. Edit `Email Content` directly in the sheet, or tell the agent what to chang
 注意事项：
 - **不要把 CMC 的 Excel、简历或发送记录上传到 GitHub。**
 - 每个人用自己的表格副本。
-- 补邮箱时控制 LinkedIn 访问量，避免账号被临时限制。
+- **LinkedIn 高频访问会被限制甚至封号**：
+  - 补邮箱时只查名单上的人，分小批、中间留间隔；
+  - 不要同时开多个 agent 访问 LinkedIn；
+  - 出现验证码、警告或限制页面立刻停止，不要重试；
+  - 自己的主页用 Save to PDF 导出，不要让 agent 去浏览。
 
 ---
 
