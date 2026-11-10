@@ -86,6 +86,8 @@ Please don't repost the directory link or file outside MQM channels, and never c
                  emails        per person        then real sends    first chat              within 24 hours
 ```
 
+![Workflow: 1 Find (match-alumni, collect-alumni-emails), 2 Reach out (draft-alumni-outreach, send-alumni-outreach), 3 Prepare (prepare-coffee-chat), 4 Follow up (write-thank-you-note). You confirm the shortlist, approve every send, edit the prep draft and hit send on the thank-you note.](docs/images/workflow.png)
+
 Every skill also works on its own. For example, you can use `prepare-coffee-chat` for someone you met at a career fair.
 
 ---

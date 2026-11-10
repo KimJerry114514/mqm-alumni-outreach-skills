@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 620" width="1280" height="620" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title>MQM coffee chat workflow: Find, Reach out, Prepare, Follow up</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#012169"/>
+    </marker>
+    <marker id="arrowSmall" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94A3B8"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1280" height="620" rx="24" fill="#F6F7FB"/>
+
+  <!-- Title -->
+  <text x="640" y="56" text-anchor="middle" font-size="30" font-weight="700" fill="#012169">From the alumni list to a lasting connection</text>
+  <text x="640" y="86" text-anchor="middle" font-size="15" fill="#64748B">Six skills, four stages. The agent does the busywork; you make every decision.</text>
+
+  <!-- Arrows between cards -->
+  <line x1="314" y1="330" x2="346" y2="330" stroke="#012169" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="624" y1="330" x2="656" y2="330" stroke="#012169" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="934" y1="330" x2="966" y2="330" stroke="#012169" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- ========== Card 1: FIND ========== -->
+  <g transform="translate(40,120)">
+    <rect width="270" height="420" rx="18" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadow)"/>
+    <path d="M0,18 A18,18 0 0 1 18,0 H252 A18,18 0 0 1 270,18 V72 H0 Z" fill="#2563EB"/>
+    <text x="22" y="46" font-size="21" font-weight="700" fill="#FFFFFF">1  Find</text>
+    <circle cx="228" cy="36" r="22" fill="#FFFFFF" fill-opacity="0.18"/>
+    <circle cx="224" cy="32" r="9" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <line x1="231" y1="39" x2="239" y2="47" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+
+    <rect x="20" y="96" width="230" height="44" rx="22" fill="#DBEAFE"/>
+    <text x="135" y="124" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="600" fill="#1E3A8A">match-alumni</text>
+    <text x="135" y="162" text-anchor="middle" font-size="13.5" fill="#475569">Pick who fits your goals</text>
+
+    <line x1="135" y1="174" x2="135" y2="198" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrowSmall)"/>
+
+    <rect x="20" y="206" width="230" height="44" rx="22" fill="#DBEAFE"/>
+    <text x="135" y="234" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="600" fill="#1E3A8A">collect-alumni-emails</text>
+    <text x="135" y="272" text-anchor="middle" font-size="13.5" fill="#475569">Fill in missing emails</text>
+    <text x="135" y="292" text-anchor="middle" font-size="12" fill="#94A3B8">(only if many are missing)</text>
+
+    <line x1="20" y1="350" x2="250" y2="350" stroke="#E2E8F0"/>
+    <circle cx="36" cy="381" r="10" fill="#DBEAFE"/>
+    <path d="M31,381 l3.5,3.5 l6.5,-7" fill="none" stroke="#2563EB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="54" y="386" font-size="13.5" fill="#334155">You confirm the shortlist</text>
+  </g>
+
+  <!-- ========== Card 2: REACH OUT ========== -->
+  <g transform="translate(350,120)">
+    <rect width="270" height="420" rx="18" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadow)"/>
+    <path d="M0,18 A18,18 0 0 1 18,0 H252 A18,18 0 0 1 270,18 V72 H0 Z" fill="#0D9488"/>
+    <text x="22" y="46" font-size="21" font-weight="700" fill="#FFFFFF">2  Reach out</text>
+    <circle cx="228" cy="36" r="22" fill="#FFFFFF" fill-opacity="0.18"/>
+    <path d="M214,37 L242,24 L234,50 L227,40 Z" fill="#FFFFFF"/>
+    <path d="M227,40 L242,24" stroke="#0D9488" stroke-width="1.6"/>
+
+    <rect x="20" y="96" width="230" height="44" rx="22" fill="#CCFBF1"/>
+    <text x="135" y="124" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="600" fill="#115E59">draft-alumni-outreach</text>
+    <text x="135" y="162" text-anchor="middle" font-size="13.5" fill="#475569">Email + LinkedIn per person</text>
+
+    <line x1="135" y1="174" x2="135" y2="198" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrowSmall)"/>
+
+    <rect x="20" y="206" width="230" height="44" rx="22" fill="#CCFBF1"/>
+    <text x="135" y="234" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="600" fill="#115E59">send-alumni-outreach</text>
+    <text x="135" y="272" text-anchor="middle" font-size="13.5" fill="#475569">Test to yourself, then send</text>
+    <text x="135" y="292" text-anchor="middle" font-size="12" fill="#94A3B8">(from your Duke Outlook)</text>
+
+    <line x1="20" y1="350" x2="250" y2="350" stroke="#E2E8F0"/>
+    <circle cx="36" cy="381" r="10" fill="#CCFBF1"/>
+    <path d="M31,381 l3.5,3.5 l6.5,-7" fill="none" stroke="#0D9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="54" y="386" font-size="13.5" fill="#334155">You approve every send</text>
+  </g>
+
+  <!-- ========== Card 3: PREPARE ========== -->
+  <g transform="translate(660,120)">
+    <rect width="270" height="420" rx="18" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadow)"/>
+    <path d="M0,18 A18,18 0 0 1 18,0 H252 A18,18 0 0 1 270,18 V72 H0 Z" fill="#D97706"/>
+    <text x="22" y="46" font-size="21" font-weight="700" fill="#FFFFFF">3  Prepare</text>
+    <circle cx="228" cy="36" r="22" fill="#FFFFFF" fill-opacity="0.18"/>
+    <rect x="217" y="22" width="22" height="28" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.6"/>
+    <rect x="223" y="18" width="10" height="7" rx="2" fill="#FFFFFF"/>
+    <line x1="222" y1="33" x2="234" y2="33" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="222" y1="40" x2="231" y2="40" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+
+    <rect x="20" y="96" width="230" height="44" rx="22" fill="#FEF3C7"/>
+    <text x="135" y="124" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="600" fill="#92400E">prepare-coffee-chat</text>
+    <text x="135" y="162" text-anchor="middle" font-size="13.5" fill="#475569">Prep doc for the first chat</text>
+
+    <g font-size="13.5" fill="#334155">
+      <circle cx="40" cy="203" r="4" fill="#D97706"/><text x="54" y="208">Why this person</text>
+      <circle cx="40" cy="231" r="4" fill="#D97706"/><text x="54" y="236">40-second pitch</text>
+      <circle cx="40" cy="259" r="4" fill="#D97706"/><text x="54" y="264">Top 4 questions + logic line</text>
+      <circle cx="40" cy="287" r="4" fill="#D97706"/><text x="54" y="292">Don't-ask list</text>
+    </g>
+
+    <line x1="20" y1="350" x2="250" y2="350" stroke="#E2E8F0"/>
+    <circle cx="36" cy="381" r="10" fill="#FEF3C7"/>
+    <path d="M31,381 l3.5,3.5 l6.5,-7" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="54" y="386" font-size="13.5" fill="#334155">You edit the draft</text>
+  </g>
+
+  <!-- ========== Card 4: FOLLOW UP ========== -->
+  <g transform="translate(970,120)">
+    <rect width="270" height="420" rx="18" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadow)"/>
+    <path d="M0,18 A18,18 0 0 1 18,0 H252 A18,18 0 0 1 270,18 V72 H0 Z" fill="#DB2777"/>
+    <text x="22" y="46" font-size="21" font-weight="700" fill="#FFFFFF">4  Follow up</text>
+    <circle cx="228" cy="36" r="22" fill="#FFFFFF" fill-opacity="0.18"/>
+    <rect x="214" y="25" width="28" height="21" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.6"/>
+    <path d="M215,27 L228,37 L241,27" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M240,14 c-2.2,-3 -7,-1.6 -6,2 c0.6,2.2 6,6 6,6 s5.4,-3.8 6,-6 c1,-3.6 -3.8,-5 -6,-2 z" fill="#FFFFFF"/>
+
+    <rect x="20" y="96" width="230" height="44" rx="22" fill="#FCE7F3"/>
+    <text x="135" y="124" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="600" fill="#9D174D">write-thank-you-note</text>
+    <text x="135" y="162" text-anchor="middle" font-size="13.5" fill="#475569">Thank-you note within 24 hours</text>
+
+    <g font-size="13.5" fill="#334155">
+      <circle cx="40" cy="203" r="4" fill="#DB2777"/><text x="54" y="208">Specific takeaways</text>
+      <circle cx="40" cy="231" r="4" fill="#DB2777"/><text x="54" y="236">Actions you've taken</text>
+      <circle cx="40" cy="259" r="4" fill="#DB2777"/><text x="54" y="264">A reason to stay in touch</text>
+      <circle cx="40" cy="287" r="4" fill="#DB2777"/><text x="54" y="292">Email, LinkedIn or WeChat</text>
+    </g>
+
+    <line x1="20" y1="350" x2="250" y2="350" stroke="#E2E8F0"/>
+    <circle cx="36" cy="381" r="10" fill="#FCE7F3"/>
+    <path d="M31,381 l3.5,3.5 l6.5,-7" fill="none" stroke="#DB2777" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="54" y="386" font-size="13.5" fill="#334155">You hit send</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="330" y="560" width="620" height="38" rx="19" fill="#012169"/>
+  <text x="640" y="585" text-anchor="middle" font-size="15" font-weight="600" fill="#FFFFFF">Your resume · your voice · your approval</text>
+</svg>
