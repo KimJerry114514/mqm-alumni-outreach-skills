@@ -25,6 +25,11 @@ description: Find and verify missing alumni emails from a user-supplied Excel wo
 6. 读取所选 sheet 的实际表头，确认姓名（First Name / Last Name）、LinkedIn 链接和 Email 列，并识别可选的 Nickname 列（表头大小写不敏感）。
 7. Email 列不存在或无法唯一确定时，请用户指定，不自动新增列。
 8. 检查是否有能够控制用户当前已登录浏览器的工具。没有时说明限制，不假装已访问页面。
+9. **开始查询前，先请用户在 agent 使用的同一个浏览器里登录两个网站**，并保持标签页打开：
+   - LinkedIn（linkedin.com）；
+   - Fuqua 校友目录（Fuqua 场景为 https://go.fuqua.duke.edu/fw/directory/search ，需 Duke 账号；也可从 Canvas 进入）。
+   可直接这样提示：「开始前请在 <浏览器名> 里登录 LinkedIn 和 Fuqua 校友目录，两个页面都保持打开，登录好告诉我。」
+10. 用户说登录好后，各打开一个页面确认确实处于登录状态（例如目录搜索页能显示搜索框，LinkedIn 能显示首页动态）。看到登录页时暂停，请用户自己登录；**不替用户输入账号、密码或验证码**，不读取 cookie。只有一个网站登录成功时，可以先用这一个来源，并说明另一个来源暂未完成。
 
 默认仅处理所选 sheet 当前筛选后可见的有效人员行，不再询问处理范围；每次重新读取实际隐藏状态，隐藏行不填写、不归类整理。用户明确指定其他范围时采用本次要求。
 
