@@ -1,0 +1,4 @@
+interface:
+  display_name: "Coffee Chat 感谢信"
+  short_description: "根据我的聊天笔记写感谢信：具体收获、已采取的行动、追问和后续联系，邮件 / LinkedIn / 微信版本"
+  default_prompt: "使用 $write-thank-you-note，根据我和对方 coffee chat 的笔记写一封感谢信，先给我看草稿。"
