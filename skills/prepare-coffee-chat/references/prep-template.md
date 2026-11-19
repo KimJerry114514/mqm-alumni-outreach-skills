@@ -18,8 +18,20 @@
 **Warm-up**
 - <small-talk hook from their profile> — <my related experience, if any>
 
-**Elevator pitch (~40 seconds)**
-> Hi <Name>! It's great to meet you, and thanks so much for taking the time. I'm <my name>, currently <program> at <school>, graduating in <month year>. <One-sentence background, chosen for relevance.> I'm now targeting <roles> in <industries>. I was particularly interested in <their specific experience>, so I'd love to learn about <core question 1 in plain words>.
+**Elevator pitch (~1 minute)**
+*If the user already has an approved pitch, paste it verbatim from its source and only write the last paragraph.*
+
+> I'm <preferred name>, <program> at <school>. I started in <field>. I liked <what you liked>, but <why you wanted to move on>. I'm <what kind of person you are>, and I wanted <the way you want to work>.
+>
+> But honestly, the biggest thing I discovered about myself at <school> wasn't <a skill>. It's that <trait>. <One or two concrete facts that prove it.>
+>
+> And I realized that's how I like to do <work> too. At <internship / project>, <what you saw>. I <what you did>. <Why it was the best part.>
+>
+> So that's what I want to do full-time: be the <role> who <what people come to you for>. I'm still exploring <…>, but I care most about <…>.
+>
+> Since you <their specific experience>, <why that connects to what you want to do>, so I'd love to hear how you see it.  ← the only part that changes per person
+
+*<Gray tip, if useful: how they might respond to the pitch and which question it leads into.>*
 
 **Q1 · <Heading>** ★ Top 4
 <Main question, grounded in their profile>

@@ -93,7 +93,7 @@
 
     <g font-size="13.5" fill="#334155">
       <circle cx="40" cy="203" r="4" fill="#D97706"/><text x="54" y="208">Why this person</text>
-      <circle cx="40" cy="231" r="4" fill="#D97706"/><text x="54" y="236">40-second pitch</text>
+      <circle cx="40" cy="231" r="4" fill="#D97706"/><text x="54" y="236">1-minute story pitch</text>
       <circle cx="40" cy="259" r="4" fill="#D97706"/><text x="54" y="264">Top 4 questions + logic line</text>
       <circle cx="40" cy="287" r="4" fill="#D97706"/><text x="54" y="292">Don't-ask list</text>
     </g>

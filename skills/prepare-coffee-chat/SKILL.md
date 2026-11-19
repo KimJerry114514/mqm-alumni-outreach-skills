@@ -1,6 +1,6 @@
 ---
 name: prepare-coffee-chat
-description: Prepare for a first coffee chat with an alum or professional - research brief, conversation arc, small-talk hook, 40-second elevator pitch, 5-7 prioritized questions grounded in the person's real profile, a don't-ask list, closing script and space for notes - saved as a Word (or Markdown) prep doc. Use after someone agrees to chat and before the meeting. First chats only; follow-up chats are out of scope.
+description: Prepare for a first coffee chat with an alum or professional - research brief, conversation arc, small-talk hook, a one-minute story-style elevator pitch (reusing the user's approved pitch when one exists), 5-7 prioritized questions grounded in the person's real profile, a don't-ask list, closing script and space for notes - saved as a Word (or Markdown) prep doc. Use after someone agrees to chat and before the meeting. First chats only; follow-up chats are out of scope.
 ---
 
 # 准备第一次 Coffee Chat
@@ -15,8 +15,9 @@ description: Prepare for a first coffee chat with an alum or professional - rese
 2. **用户最想聊的 2–3 个点（必需）**：例如「我们相似的转型路径：会计 → 数据分析」「她所在公司和零售行业的 data scientist」。这是整份准备的出发点，资料调研只用来支撑和打磨这些点，不另起炉灶。
 3. **对方的其他公开材料（可选，强烈推荐）**：个人网站、博客、采访、演讲、公司团队页面。这些通常能带来最好的问题。
 4. **用户本人的简历**：已在 `draft-alumni-outreach` 中读过且未变化时复用，不重复索取。
-5. **聊天形式**：线上或线下、预计时长（默认 20–30 分钟）、语言。对方确认是中文母语且用户希望用中文时，整份文档用中文，称呼「学长 / 学姐」只在确认后使用。
-6. **可选**：谁介绍认识的（引荐人）、对方是否参与招聘、用户是否已经在申请对方公司。
+5. **用户认可过的 elevator pitch（有就用）**：记在外部 `profile.json` 的 `elevator_pitch` 里，或用户指定的某份准备文档。有的话先重新读一遍源文档，取最新措辞。
+6. **聊天形式**：线上或线下、预计时长（默认 20–30 分钟）、语言。对方确认是中文母语且用户希望用中文时，整份文档用中文，称呼「学长 / 学姐」只在确认后使用。
+7. **可选**：谁介绍认识的（引荐人）、对方是否参与招聘、用户是否已经在申请对方公司。
 
 ## 准备步骤
 
@@ -34,8 +35,24 @@ description: Prepare for a first coffee chat with an alum or professional - rese
 - 线下见面可以准备一句关于地点、天气或当天活动的话。
 - 引荐人存在时，开场提一句是谁推荐来的。
 
-### 5. 40 秒 Elevator Pitch
-结构：感谢 → 我是谁、项目、毕业时间 → 背景一句话（选与对方最相关的经历，不念简历）→ 目标岗位和行业 → 为什么特别想和你聊（对方的某段具体经历）。要写成可以自然说出口的叙述，而不是要点。只用用户简历里有的事实。
+### 5. Elevator Pitch（约 1 分钟，讲成一个故事）
+**已有认可的版本时，每次原样沿用。** 主体不为了贴合对方而改写，也不退回「我是谁 → 背景 → 目标岗位」的简历式写法；只在最后加一句「为什么想和你聊」，这是唯一随人变化的部分。用户后来改过源文档的措辞时，以最新版为准。
+
+还没有认可的版本时，按下面的故事结构和用户一起写一版，用户确认后记进 `profile.json` 的 `elevator_pitch`（原文、来源文档、确认日期），以后都用它：
+
+1. **起点和转折**：从哪里出发，喜欢其中什么，又是什么让自己想换方向。一两句，诚实具体。
+2. **我是什么样的人**：想要什么样的工作方式，例如想用最新的工具。
+3. **最大的发现**：读书期间关于自己最大的发现，不是学会了哪个模型，而是一种特质；用一两个具体事实证明（做过多少次、负责过什么、因此遇到过谁）。
+4. **一个具体场景**：在实习或项目里，这个特质怎么变成了做事的方式：坐在谁旁边、看到了什么问题、做了什么、最开心的是什么。
+5. **想做什么**：把目标岗位说成「别人遇到什么问题时第一个想到的人」，再说还在探索什么、最看重团队的什么。
+6. **为什么是你**：点出对方的一段具体经历和你想做的事有什么关系，一两句。
+
+写法：
+- 口语、短句、第一人称，用「But honestly…」「And I realized…」「So that's what I want to do…」这类转折把段落串成一个故事，能自然说出口，不是要点列表。
+- 不念简历：不列公司清单，不堆指标数字；每个事实都要服务于这条故事线。
+- 开头可以加一句简短的感谢和称呼；只用用户简历和本人补充里有的事实。
+- 对方确认是中文校友时用中文版，附英文版备用，两版内容一致。
+- 对方的经历和 pitch 有呼应时（例如也是从同一个行业转出来的），在 pitch 下面加一行灰色提醒：对方可能怎么接话，怎么顺势进入某个问题。
 
 ### 6. 问题（5–7 组，每组有标题）
 每组一个主问题，可附一个追问，并在旁边用一行写**为什么问**（这个问题帮用户获得什么信息），这一行只给用户看。常见组合（按需取舍、改写）：

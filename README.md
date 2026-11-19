@@ -276,7 +276,7 @@ It also asks the format (Zoom or in person), how long, the language, and whether
 - **Company and team brief**: so you don't spend the chat asking what's on their website.
 - **Conversation arc**: one line that ties the questions together, e.g. *Their Journey → Current Work → How AI Is Changing the Role → What That Means for You → Who Else to Meet*.
 - **Warm-up**: a small-talk hook from their profile, such as a hobby, a shared school or a recent event.
-- **40-second elevator pitch**: built from your resume and pointed at why you wanted to talk to *them*.
+- **One-minute elevator pitch, told as a story**: where you started, what you discovered about yourself, one concrete moment from an internship or project, and the role you want. Once you approve a version it is reused for every chat; only the last line, why you wanted to talk to *them*, changes.
 - **5–7 question groups**, each with:
   - a main question grounded in something specific on their profile;
   - a follow-up;
@@ -395,7 +395,7 @@ CMC 整理的校友 Excel 里已有学长学姐的 **LinkedIn 链接**和基本�
 | 找人 | `collect-alumni-emails` | 「帮名单上没邮箱的人找邮箱」 | **开始前先在 agent 用的浏览器里登录 LinkedIn 和 FuquaWorld（Duke 账号），打开 People → Directory Search 页面（见英文部分截图），两个页面保持打开**；agent 会先确认登录状态再开始。只查名单上的人，分小批进行 |
 | 邀约 | `draft-alumni-outreach` | 「给名单写邮件和 LinkedIn 私信」 | 每人一封邮件和一条私信，只用你简历里的事实 |
 | 邀约 | `send-alumni-outreach` | 「先发一封测试到我的邮箱」，确认后「全部发送」 | 先问要不要带 Outlook 签名：带签名就在 Outlook 网页逐封发（较慢）；不带就用连接器直接发（较快）。LinkedIn 私信自己手动发 |
-| 准备 | `prepare-coffee-chat` | 「帮我准备和某某的 coffee chat」，附对方 LinkedIn PDF 和你最想聊的 2–3 点 | Word 准备稿：为什么找这个人、公司背景、聊天主线、开场寒暄、40 秒自我介绍、标出 Top 4 的问题、不建议问的问题、收尾和会后清单。这是底稿，你改完它会在同一份上继续调整 |
+| 准备 | `prepare-coffee-chat` | 「帮我准备和某某的 coffee chat」，附对方 LinkedIn PDF 和你最想聊的 2–3 点 | Word 准备稿：为什么找这个人、公司背景、聊天主线、开场寒暄、1 分钟故事式自我介绍（认可过的版本每次沿用，只改最后一句）、标出 Top 4 的问题、不建议问的问题、收尾和会后清单。这是底稿，你改完它会在同一份上继续调整 |
 | 跟进 | `write-thank-you-note` | 「根据我的笔记给某某写感谢信」 | 当天或第二天发：感谢加一个具体细节 → 一两条具体收获 → 已经采取的行动 → 可选追问 → 约定之后同步进展。可选邮件、LinkedIn 或微信版本 |
 
 **注意事项：**
